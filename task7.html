@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<style>
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 300px;
+		background-color: lightblue;
+	}
+	li a {
+		display: block;
+		color: blue;
+		padding: 8px 16px;
+		text-decoration: none;
+	}
+
+	li a:hover {
+		background-color: orange;
+		color: beige;
+	}
+
+	.icon {
+		margin-right: 10px;
+	}
+    #i1{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgray;
+}
+
+#i2 {
+  float: left;
+}
+
+
+#i1 a:hover:not(.active) {
+  background-color: gray;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+
+</style>
+</head>
+<body>
+    <div class="split left">
+    <p>Verticl Navigation Bar</p>
+	<ul>
+		<li><a href="#">
+		Home</a></li>
+		<li><a href="#">
+		Java</a></li>
+		<li><a href="#">
+		CSS</a></li>
+		<li><a href="#">
+		HTML</a></li>
+        <li><a href="#">
+        Bootstrap</a></li>
+	</ul>
+</div>
+
+<div class="split right">
+    <p>Horizontal Navigation Bar</p>
+    <ul id="i1">
+        <li id="i2"><a href="#home">Home</a></li>
+        <li id="i2"><a href="#Java">Java</a></li>
+        <li id="i2"><a href="#HTML">HTML</a></li>
+        <li id="i2"><a href="#CSS">CSS</a></li>
+      </ul>
+</div>
+</body>
+</html>
